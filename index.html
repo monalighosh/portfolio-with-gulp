@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Monali Ghosh - Freelance Web Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="build/css/main-min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<input type="checkbox" id="mobile-nav" class="mobile-nav"/>
+	<label for="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></label>
+
+	<input type="checkbox" class="sideContact-cbox" id="sideContact-cbox">
+	<label for="sideContact-cbox" class="sideContact-label"><i class="fa fa-envelope-o" aria-hidden="true"></i></label>	
+	
+	<div class="wrapper"><!-- page wrapper start -->
+		<div class="sidebar-contact" id="sidebar-contact"><!-- Sidebar contact start -->
+			<form id="contact-form" action="" method="post">
+				<input type="text" name="name" class="contact-input" placeholder="Your name *">
+				<input type="email" name="email" class="contact-input" placeholder="Your e-mail *">
+				<textarea name="message" class="contact-textarea" placeholder="Your message *"></textarea>
+				<button name="submit" class="contact-submit">Send</button>
+			</form>
+		</div><!-- Sidebar contact end -->
+
+		<div class="sidebar"><!-- Mobile Navigation bar start -->
+			<ul class="mobile-navigation">
+				<li class="mobile-navigation__item"><a href="#hello" title="Welcome">Monali Ghosh</a></li>			
+				<li class="mobile-navigation__item"><a href="#hello" title="Welcome">Hello</a></li>
+				<li class="mobile-navigation__item"><a href="#me" title="About Me">Me</a></li>
+				<li class="mobile-navigation__item">
+					<input type="checkbox" id="projects-nav" class="projects-nav"/>
+					<a href="#projects" title="My Projects"><label for="projects-nav">Projects</label></a>
+					<ul class="project-subnav">
+						<li class="project-subnav__item"><a href="#project-tab-1" title="Web Components">Web Components</a></li>			
+						<li class="project-subnav__item"><a href="#project-tab-2" title="Profile sidebar">Profile sidebar</a></li>
+						<li class="project-subnav__item"><a href="#project-tab-3" title="Calculator">Calculator</a></li>
+						<li class="project-subnav__item"><a href="#project-tab-4" title="Product Listing">Product Listing</a></li>
+						<li class="project-subnav__item"><a href="#project-tab-5" title="Image Gallery">Image Gallery</a></li>
+						<li class="project-subnav__item"><a href="#project-tab-6" title="Accordion">Accordion</a></li>
+					</ul>
+				</li>
+				<li class="mobile-navigation__item"><a href="#skills" title="Skills">Skills</a></li>
+				<li class="mobile-navigation__item"><a href="#contact" title="Get In Touch">Contact</a></li>
+				<li class="mobile-navigation__item--last-child">&copy; 2016 Monali Ghosh</li>
+			</ul>
+		</div><!-- Mobile Navigation bar end -->
+
+		<div class="maincontent-wrapper"><!-- main content wrapper start -->
+			<header class="page-header"> <!-- Navigation bar start -->
+				<h1 title="Monali Ghosh" class="logo"><a href="index.html">Monali Ghosh</a></h1>
+
+				<div class="search-box">
+					<form id="searchForm" action="" method="post">
+						<input type="search" name="searchBox" id="searchBox" placeholder="Search here...">
+						<a href="#openModal" title="Search"><i class="search-box__icon fa fa-search"></i></a>
+					</form>
+				</div>
+				<nav>
+					<ul class="main-navigation">
+						<li class="main-navigation__item"><a onclick="scrollToEle('hello'); return false" href="#" title="Welcome">Hello</a></li>
+						<li class="main-navigation__item"><a onclick="scrollToEle('me'); return false" href="#me" title="About Me" onclick="scrollPage(this)">Me</a></li>
+						<li class="main-navigation__item"><a onclick="scrollToEle('projects'); return false" href="#" title="My Projects">Projects</a></li>
+						<li class="main-navigation__item"><a onclick="scrollToEle('skills'); return false" href="#" title="Skills">Skills</a></li>
+						<li class="main-navigation__item"><a onclick="scrollToEle('contact'); return false" href="#" title="Get In Touch">Contact</a></li>
+					</ul>
+				</nav>
+			</header> <!-- Navigation bar end -->
+
+			<div class="linkcontent-wrapper"> <!-- Link content start -->
+
+				<!-- Home section start -->
+				<section class="home" id="hello">
+					<div class="home__container">
+						<p class="home__para">Hi, my name is</p> 
+						<h1 class="home__heading">Monali Ghosh</h1>
+						<p class="home__para">a passionate web designer and<br/> an aspiring front end web developer from Melbourne.</p>
+						<p class="home__para home__para--last-child"></p>
+					</div>
+				</section>
+				<!-- Home section end -->
+
+				<!-- About section start -->
+				<section class="about" id="me">
+					<div>
+						<h1 class="about__heading">I design and build engaging and beautiful web experiences</h1> 
+						<p class="about__para">I'm a web designer from India living in Melbourne, where I work as a freelance web designer. I have a keen eye for detail and am passionate about typography, colours and interaction.</p>
+					</div>
+				</section>
+				<!-- About section end -->
+
+				<!-- Projects section start -->
+				<section class="projects" id="projects">
+					<div>
+						<h1 class="projects__heading">Check out some of my projects…</h1> 
+
+						<!-- Project tabs start -->
+						<div class="projects__tabs">
+
+							<div class="projects__tabs__1" id="project-tab-1"> <!-- Project tab first start -->
+
+								<input type="radio" name="projects" id="webComponents" checked>
+								<label for="webComponents" class="projects__tabs__1__label">Web Components</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+
+										<input type="radio" name="slides" id="slide1" checked>
+										<img src="build/images/buttons.jpg" class="carousels-input__image">
+										<input type="radio" name="slides" id="slide2">
+										<img src="build/images/form-colours.jpg" class="carousels-input__image">
+										<input type="radio" name="slides" id="slide3">
+										<img src="build/images/form-credit.jpg" class="carousels-input__image">
+										<input type="radio" name="slides" id="slide4">
+										<img src="build/images/form-signup.jpg" class="carousels-input__image">
+
+										<div class="controls">
+											<label for="slide1" class="label"></label>
+											<label for="slide2" class="label"></label>
+											<label for="slide3" class="label"></label>
+											<label for="slide4" class="label"></label>
+										</div>
+
+										<label for="slide1" class="arrow" id="arrow1">></label>
+										<label for="slide2" class="arrow" id="arrow2">></label>
+										<label for="slide3" class="arrow" id="arrow3">></label>
+										<label for="slide4" class="arrow" id="arrow4">></label>
+
+									</div>
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create simple and reusable button and several form components for web components library. The button components are created using HTML5 and CSS3 with some transition effects on mouse over. Forms are built using HTML5, CSS3 and JavaScript for basic validation. </p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3, JavaScript</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="http://monalighosh.github.io/web-components/buttons/" target="_blank" title="Buttons">Buttons</a></p>
+										<p class="project-info__para"><a href="http://monalighosh.github.io/web-components/forms/" target="_blank" title="Forms">Forms</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab first end -->
+
+							<div class="projects__tabs__2" id="project-tab-2"> <!-- Project tab second start -->
+
+								<input type="radio" name="projects" id="sidebar">
+								<label for="sidebar" class="projects__tabs__2__label">Profile Sidebar</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+										<input type="radio" name="sidebar-slides" id="sidebar-slide1" checked>
+										<img src="build/images/profile.jpg" class="carousels-input__image">
+
+										<input type="radio" name="sidebar-slides" id="sidebar-slide2">
+										<img src="build/images/profile1.jpg" class="carousels-input__image">
+
+										<div class="controls">
+											<label for="sidebar-slide1" class="label"></label>
+											<label for="sidebar-slide2" class="label"></label>
+										</div>
+
+										<label for="sidebar-slide1" class="arrow-sidebar" id="arrow1">></label>
+										<label for="sidebar-slide2" class="arrow-sidebar" id="arrow2">></label>
+									</div>
+
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create informative profile card to be used on the profile page at Modern Developer website. This componenet is built with plain HTML5 and CSS3.</p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="http://monalighosh.github.io/Project-3/" target="_blank" title="Profile Sidebar">Profile Sidebar</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab second end -->
+
+							<div class="projects__tabs__3" id="project-tab-3"> <!-- Project tab third start -->
+								<input type="radio" name="projects" id="calculator">
+								<label for="calculator" class="projects__tabs__3__label">Calculator</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+										<input type="radio" name="calculator-slides" id="calculator-slide1" checked>
+										<img src="build/images/calculator.jpg" class="carousels-input__image">
+
+										<input type="radio" name="calculator-slides" id="calculator-slide2">
+										<img src="build/images/calculator-zoom.jpg" class="carousels-input__image">
+
+										<input type="radio" name="calculator-slides" id="calculator-slide3">
+										<h2>Live demo on the next slide.</h2>
+
+										<input type="radio" name="calculator-slides" id="calculator-slide4">
+										
+										<!--calculator box-->
+										<div id="calbox" class="calbox">
+											<form id="cal" method="post" action="">
+
+												<!--calculator header-->
+												<div class="calbox__header">
+													<div class="calbox__header__logo">casio</div>
+													<!--calculator screen-->
+													<input id="screen" type="text" value="" readonly>
+												</div>
+												<!--end calculator header-->
+
+												<!--calculator buttons-->
+												<div id="calbody" class="calbox__body">
+													<div>
+														<input type="button" id="num7" value="7"/>
+														<input type="button" id="num8" value="8" />
+														<input type="button" id="num9" value="9" />
+														<input type="button" id="division" value="/" />
+													</div>
+
+													<div>
+														<input type="button" id="num4" value="4" />
+														<input type="button" id="num5" value="5" />
+														<input type="button" id="num6" value="6" />
+														<input type="button" id="multiplication" value="*" />
+													</div>
+
+													<div>
+														<input type="button" id="num1" value="1" />
+														<input type="button" id="num2" value="2" />
+														<input type="button" id="num3" value="3" />
+														<input type="button" id="subtraction" value="-" />
+													</div>
+
+													<div>
+														<input type="button" id="num0" value="0" />
+														<input type="button" id="dot" value="." />
+														<input type="button" id="equal" value="=" />
+														<input type="button" id="add" value="+" />
+													</div>
+
+													<div>
+														<input type="button" id="clear" value="CLEAR" />
+														<input type="button" id="del" value="DEL" />
+
+													</div>
+												</div>
+												<!--end calculator buttons-->
+
+											</form>
+										</div>
+										<!--end calculator box-->
+
+
+										<div class="controls">
+											<label for="calculator-slide1" class="label"></label>
+											<label for="calculator-slide2" class="label"></label>
+											<label for="calculator-slide3" class="label"></label>
+											<label for="calculator-slide4" class="label"></label>
+										</div>
+
+										<label for="calculator-slide1" class="arrow" id="arrow1">></label>
+										<label for="calculator-slide2" class="arrow" id="arrow2">></label>
+										<label for="calculator-slide3" class="arrow" id="arrow3">></label>
+										<label for="calculator-slide4" class="arrow" id="arrow4">></label>
+									</div>
+
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create a fully functional calculator. It is built with HTML5, CSS3 and some JavaScript to perform simple arithmetic operations such as addition, subtraction, multiplication etc. The design is based on my first pocket calculator by Casio.</p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3, JavaScript</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="http://monalighosh.github.io/Project-5/" target="_blank" title="Calculator">Calculator</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab third end -->
+
+							<div class="projects__tabs__4" id="project-tab-4"> <!-- Project tab fourth start -->
+								<input type="radio" name="projects" id="product-listing">
+								<label for="product-listing" class="projects__tabs__4__label">Product Listing Page</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+										<input type="radio" name="product-slides" id="product-slide1" checked>
+										<img src="build/images/shopping.jpg" class="carousels-input__image">
+
+										<input type="radio" name="product-slides" id="product-slide2">
+										<img src="build/images/shopping1.jpg" class="carousels-input__image">
+
+										<input type="radio" name="product-slides" id="product-slide3">
+										<img src="build/images/shopping2.jpg" class="carousels-input__image">
+
+										<div class="controls">
+											<label for="product-slide1" class="label"></label>
+											<label for="product-slide2" class="label"></label>
+											<label for="product-slide3" class="label"></label>
+										</div>
+
+										<label for="product-slide1" class="arrow" id="arrow1">></label>
+										<label for="product-slide2" class="arrow" id="arrow2">></label>
+										<label for="product-slide3" class="arrow" id="arrow3">></label>
+									</div>
+
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create a simple product listing page with a shopping cart. This mock online shopping page comprises a list watches and a functional shopping cart. It enables the user to add, remove, and update product's quantity as desired and apply discount codes (if applicable). The shopping cart calculates the final order total after every change. </p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3, JavaScript</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="http://monalighosh.github.io/Project-6/" target="_blank" title="Product Listing Page">Product Listing Page</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab fourth end -->
+
+							<div class="projects__tabs__5" id="project-tab-5"> <!-- Project tab fifth start -->
+								<input type="radio" name="projects" id="image-gallery">
+								<label for="image-gallery" class="projects__tabs__5__label">Image Gallery</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+										<input type="radio" name="gallery-slides" id="gallery-slide1" checked>
+										<img src="build/images/image-gallery.jpg" class="carousels-input__image">
+
+										<input type="radio" name="gallery-slides" id="gallery-slide2">
+										<img src="build/images/image-gallery1.jpg" class="carousels-input__image">
+
+										<input type="radio" name="gallery-slides" id="gallery-slide3">
+										<h2>Live demo on the next slide.</h2>
+
+										<input type="radio" name="gallery-slides" id="gallery-slide4">
+										<!--image gallery main container start-->
+										<div class="gallery-container">
+											<!-- First image by default on page load -->
+											<div class="gallery-container__first-child">
+												<input type="radio" name="thumbnails" id="1" checked>
+												<label for="1"><img src="build/images/1.jpg" class="gallery-container__thumbnails"></label>
+												<img src="build/images/1.jpg" id="1" class="largeView">
+											</div>
+											<!-- Second image -->
+											<div>
+												<input type="radio" name="thumbnails" id="2">
+												<label for="2"><img src="build/images/2.jpg" class="gallery-container__thumbnails"></label>
+												<img src="build/images/2.jpg" id="2" class="largeView">
+											</div>	
+											<!-- Third image -->
+											<div>
+												<input type="radio" name="thumbnails" id="3">
+												<label for="3"><img src="build/images/3.jpg" class="gallery-container__thumbnails"></label>
+												<img src="build/images/3.jpg" id="3" class="largeView">
+											</div>
+											<!-- Fourth image -->
+											<div>
+												<input type="radio" name="thumbnails" id="4">
+												<label for="4"><img src="build/images/4.jpg" class="gallery-container__thumbnails"></label>
+												<img src="build/images/4.jpg" id="4" class="largeView">
+											</div>
+											<!-- Fifth image -->
+											<div>
+												<input type="radio" name="thumbnails" id="5">
+												<label for="5"><img src="build/images/5.jpg" class="gallery-container__thumbnails"></label>
+												<img src="build/images/5.jpg" id="5" class="largeView">
+											</div>
+										</div>
+										<!--image gallery main container end-->
+
+										<div class="controls">
+											<label for="gallery-slide1" class="label"></label>
+											<label for="gallery-slide2" class="label"></label>
+											<label for="gallery-slide3" class="label"></label>
+											<label for="gallery-slide4" class="label"></label>
+										</div>
+
+										<label for="gallery-slide1" class="arrow" id="arrow1">></label>
+										<label for="gallery-slide2" class="arrow" id="arrow2">></label>
+										<label for="gallery-slide3" class="arrow" id="arrow3">></label>
+										<label for="gallery-slide4" class="arrow" id="arrow4">></label>
+									</div>
+
+
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create a simple image gallery. This componenet is built with pure HTML5 and CSS3. CSS3 transition effects are used to make it more attractive. </p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="https://monalighosh.github.io/mastering-css-project-4/" target="_blank" title="Image Gallery">Image Gallery</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab fifth end -->
+
+							<div class="projects__tabs__6" id="project-tab-6"> <!-- Project tab sixth start -->
+								<input type="radio" name="projects" id="accordion">
+								<label for="accordion" class="projects__tabs__6__label">Accordion</label>
+
+								<div class="project-carousels"> <!-- Project carousels start -->
+									<div class="carousels-input">
+										<input type="radio" name="accordion-slides" id="accordion-slide1" checked>
+										<img src="build/images/accordion.jpg" class="carousels-input__image">
+
+										<input type="radio" name="accordion-slides" id="accordion-slide2">
+										<img src="build/images/accordion1.jpg" class="carousels-input__image">
+
+										<input type="radio" name="accordion-slides" id="accordion-slide3">
+										<h2>Live demo on the next slide.</h2>
+
+										<input type="radio" name="accordion-slides" id="accordion-slide4">
+										<!--accordion main container start-->
+										<div class="accordion">
+											<ul class="accordion__list">
+
+												<!-- Item 1 -->
+												<li class="accordion__items">
+													<input type="checkbox" name="accordion-tabs" id="appetizers" checked>
+													<label for="appetizers" class="accordion__label">Appetizers</label>
+													<div class="tabContent">
+														<h3>Check our tasty apps!</h3>
+														<h4>Happy hour menu - half off!!</h4>
+														<p class="tabContent__para">Chicken wings (6) - $5.99</p>
+														<p class="tabContent__para">Calamari - $7.99</p>
+													</div>
+												</li>
+
+												<!-- Item 2 -->
+												<li class="accordion__items">
+													<input type="checkbox" name="accordion-tabs" id="entrees">
+													<label for="entrees" class="accordion__label">Entrees</label>
+
+													<div class="tabContent">
+														<h3>Choose from a wide range of pastas, combos and signature dishes!!</h3>
+														
+														<h4>Pastas</h4>
+														<p class="tabContent__para">Chicken picatta - $14.99</p>
+														<p class="tabContent__para">Chicken pollo - $12.99</p>
+														
+														<h4>Combos</h4>
+														<p class="tabContent__para">Italian sausage &amp; beef combo - $15.99</p>
+														<p class="tabContent__para">Mac n cheese with chicken tenders - $8.99</p>
+													</div>
+
+												</li>
+
+												<!-- Item 3 -->
+												<li class="accordion__items">
+													<input type="checkbox" name="accordion-tabs" id="desserts">
+													<label for="desserts" class="accordion__label">Desserts</label>
+
+													<div class="tabContent">
+														<h3>New summer specials!!</h3>
+														
+														<h4>Shakes and ice creams</h4>
+														<p class="tabContent__para">Turtle caramel shake - $6.99</p>
+														<p class="tabContent__para">Chocolate brownie bite - $4.99</p>
+													</div>
+												</li>
+
+												<!-- Item 4 -->
+												<li class="accordion__items">
+													<input type="checkbox" name="accordion-tabs" id="soupsSalads">
+													<label for="soupsSalads" class="accordion__label">Soups &amp; Salads</label>
+
+													<div class="tabContent">
+														<h3>Made fresh to order!!</h3>
+														
+														<h4>Soups</h4>
+														<p class="tabContent__para">Chickpea, Kale, &amp; Tomato Soup - $10.99</p>
+														<p class="tabContent__para">Creamy Sweet Potato Soup - $8.99</p>
+														
+														<h4>Salads</h4>
+														<p class="tabContent__para">Blueberry, Kale, &amp; Quinoa Salad - $9.99</p>
+														<p class="tabContent__para">Mediterranean Cucumber Salad - $7.99</p>
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<!--accordion main container end-->
+
+										<div class="controls">
+											<label for="accordion-slide1" class="label"></label>
+											<label for="accordion-slide2" class="label"></label>
+											<label for="accordion-slide3" class="label"></label>
+											<label for="accordion-slide4" class="label"></label>
+										</div>
+
+										<label for="accordion-slide1" class="arrow" id="arrow1">></label>
+										<label for="accordion-slide2" class="arrow" id="arrow2">></label>
+										<label for="accordion-slide3" class="arrow" id="arrow3">></label>
+										<label for="accordion-slide4" class="arrow" id="arrow4">></label>
+									</div>
+
+									<div class="project-info l-floatRight"> <!-- Project info start -->
+										<h2 class="project-info__heading">Project:</h2>
+										<p class="project-info__para">This project was to create an accordion component. It is built with only HTML5 and CSS3. It uses radio inputs and labels to show and hide sections on click. It is reusable and responsive. </p>
+										<h2 class="project-info__heading">Technologies:</h2>
+										<p class="project-info__para">HTML5, CSS3</p>
+										<h2 class="project-info__heading">Live Demo:</h2>
+										<p class="project-info__para"><a href="https://monalighosh.github.io/mastering-css-project-2/" target="_blank" title="Accordion">Accordion</a></p>
+									</div> <!-- Project info end -->
+
+								</div> <!-- Project carousels end -->
+							</div> <!-- Project tab sixth end -->
+
+						</div>
+						<!-- Project tabs end -->
+
+					</div>
+				</section>
+				<!-- Projects section end -->
+
+				<!-- Skills section start -->
+				<section class="skills" id="skills">
+					<div class="skills__container">
+						<h1 class="skills__heading">I love what I do because it's a never-ending learning experience</h1> 
+						<div class="progress-bar">
+							<span class="progress-bar__design">45%</span>
+							<span class="progress-bar__frontend">35%</span>
+							<span class="progress-bar__other">20%</span>
+						</div>
+
+						<!-- Skills graphs start -->
+						<div class="graphs-wrapper">
+
+							<!-- Design graphs start -->
+							<div class="graph">
+								<ul class="graph__list">
+									<li class="graph__list__item graph--bar1 graph--design" style="height: 85%">
+										<div class="graph__list__item__tooltip">Expert</div>
+									</li>
+									<li class="graph__list__item graph--bar2 graph--design" style="height: 70%">
+										<div class="graph__list__item__tooltip">Proficient</div>
+									</li>
+									<li class="graph__list__item graph--bar3 graph--design" style="height: 70%">
+										<div class="graph__list__item__tooltip">Proficient</div>
+									</li>
+									<li class="graph__list__item graph--bar4 graph--design" style="height: 55%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+									<li class="graph__list__item graph--bar5 graph--design" style="height: 45%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+								</ul>
+
+								<ul class="graph-yaxis-list">
+									<li class="graph-yaxis-list__item">Expert</li>
+									<li class="graph-yaxis-list__item">Proficient</li>
+									<li class="graph-yaxis-list__item">Competent</li>
+									<li class="graph-yaxis-list__item">Learning</li>
+								</ul>
+							</div>
+							<!-- Design graphs end -->
+
+							<!-- Frontend graphs start -->
+							<div class="graph">
+								<ul class="graph__list">
+									<li class="graph__list__item graph--bar1 graph--frontend" style="height: 90%">
+										<div class="graph__list__item__tooltip">Expert</div>
+									</li>
+									<li class="graph__list__item graph--bar2 graph--frontend" style="height: 50%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+									<li class="graph__list__item graph--bar3 graph--frontend" style="height: 45%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+									<li class="graph__list__item graph--bar4 graph--frontend" style="height: 25%">
+										<div class="graph__list__item__tooltip">Learning</div>
+									</li>
+									<li class="graph__list__item graph--bar5 graph--frontend" style="height: 25%">
+										<div class="graph__list__item__tooltip">Learning</div>
+									</li>
+								</ul>
+
+								<ul class="graph-yaxis-list">
+									<li class="graph-yaxis-list__item">Expert</li>
+									<li class="graph-yaxis-list__item">Proficient</li>
+									<li class="graph-yaxis-list__item">Competent</li>
+									<li class="graph-yaxis-list__item">Learning</li>
+								</ul>
+							</div>
+							<!-- Frontend graphs end -->
+
+							<!-- Backend graphs start -->
+							<div class="graph">
+								<ul class="graph__list">
+									<li class="graph__list__item graph--bar1 graph--other" style="height: 75%">
+										<div class="graph__list__item__tooltip">Proficient</div>
+									</li>
+									<li class="graph__list__item graph--bar2 graph--other" style="height: 40%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+									<li class="graph__list__item graph--bar3 graph--other" style="height: 55%">
+										<div class="graph__list__item__tooltip">Competent</div>
+									</li>
+									<li class="graph__list__item graph--bar4 graph--other" style="height: 70%">
+										<div class="graph__list__item__tooltip">Proficient</div>
+									</li>
+									<li class="graph__list__item graph--bar5 graph--other" style="height: 60%">
+										<div class="graph__list__item__tooltip">Proficient</div>
+									</li>
+								</ul>
+
+								<ul class="graph-yaxis-list">
+									<li class="graph-yaxis-list__item">Expert</li>
+									<li class="graph-yaxis-list__item">Proficient</li>
+									<li class="graph-yaxis-list__item">Competent</li>
+									<li class="graph-yaxis-list__item">Learning</li>
+								</ul>
+							</div>
+							<!-- Backend graphs end -->
+
+						</div>
+						<!-- Skills graphs end -->
+					</div>
+				</section>
+				<!-- Skills section end -->
+
+				<!-- Contact section start  -->
+				<section class="contact" id="contact">
+					<div>
+						<h1 class="contact__heading">Let's create something great together!</h1> 
+
+						<!-- E card start -->
+						<div class="ecard">
+							<input type="checkbox" name="digitalCard" id="digitalCard" class="ecard__checkbox">
+							<label for="digitalCard" class="ecard__label">
+								<div class="card">
+
+									<!-- card front -->
+									<div class="front">
+										<header class="front__header">
+											<div class="name">
+												<h1 class="front__header__h1">Monali Ghosh</h1>
+												<h2 class="front__header__h2">Freelance Web Designer</h2>
+											</div>
+											<div class="flipIcon l-floatRight">
+												<img src="build/images/flip.png">
+											</div>	
+										</header>
+										<section class="front__section">
+											<p class="front__section__para">I am a Melbourne based freelance web designer with a focus on user experience and interaction. I am an aspiring front end web developer with a passion for building engaging and beautiful web experiences.</p>
+											<p class="front__section__para"><a href="mailto:monali.edu@gmail.com" target="_blank">monali.edu@gmail.com</a><span class="front__section__span"><a href="http://www.monalighosh.com" target="_blank">monalighosh.com</a></span></p>
+										</section>
+										<footer class="front__footer">
+											<div class="front__footer__left-icon">
+												<img src="build/images/enc1.png" class="l-floatLeft front__footer__image">
+												<span class="front__footer__txt">Monali Ghosh<br/>on <a href="#">Encyclopedia.MD</a></span>
+											</div>
+											<div class="front__footer__social-icons">
+												<a href="#"><img src="build/images/facebook.png" class="front__footer__social-icons__image"></a>
+												<a href="#"><img src="build/images/github1.png" class="front__footer__social-icons__image"></a>
+												<a href="#"><img src="build/images/linkedin.png" class="front__footer__social-icons__image"></a>
+											</div>
+										</footer>	
+									</div>
+
+									<!-- card back -->
+									<div class="back">
+										<div class="flipIcon l-floatRight">
+											<img src="build/images/flip.png">
+										</div>	
+										<p class="back__para">Monali Ghosh</p>
+									</div>
+
+								</div>
+							</label>
+						</div>
+						<!-- E card end -->
+
+					</div>
+				</section>
+				<!-- Contact section end -->
+
+			</div> <!-- Link content end -->
+
+			<div class="scroll-top" id="scroll-top"><!-- ScrollToTop button start -->
+				<a onclick="scrollToTop('hello'); return false" href="#" title="Top"><i class="scroll-top__btn fa fa-chevron-up"></i></a>
+			</div><!-- ScrollToTop button end -->
+
+			<footer class="page-footer"> <!-- Footer section start -->
+				&copy; 2016 Monali Ghosh			
+			</footer> <!-- Footer section end -->
+
+			<section class="search-modal" id="openModal"> <!-- Search modal section start  -->
+				<a href="#close" title="close" class="close">X</a>	
+				<div class="search-modal__container">
+					<h1 class="search-modal__heading">Search is temporarily unavailable.
+						Sorry for the inconvenience.</h1>	
+					</div>
+				</section> <!-- Search section end -->
+
+			</div><!-- main content wrapper end -->
+		</div> <!-- page wrapper end -->
+
+		<!-- javascript file -->
+		<script src="build/js/main-min.js"></script>
+	</body>
+	</html>
