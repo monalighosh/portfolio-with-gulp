@@ -1,1 +1,1 @@
-# gulp-portfolio-assignment-2
+# Portfolio set up using NPM and Gulp
