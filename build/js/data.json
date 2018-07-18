@@ -33,7 +33,7 @@
       "performances": [
         {
           "date": "Friday 7 Jul 8:00pm",
-          "dateString": "2018-07-27T20:00:00+00:00"
+          "dateString": "2018-07-07T14:00:00+00:00"
         },
         {
           "date": "Sunday 29 Jul 2:00pm",
@@ -48,8 +48,8 @@
           "dateString": "2018-07-31T14:00:00+00:00"
         },
         {
-          "date": "Sunday 2 August 2:00pm",
-          "dateString": "2018-08-02T14:00:00+00:00"
+          "date": "Sunday 31 Jul 2:00pm",
+          "dateString": "2018-07-31T14:00:00+00:00"
         }
       ]
     },
@@ -77,8 +77,8 @@
           "dateString": "2018-07-31T14:00:00+00:00"
         },
         {
-          "date": "Sunday 2 August 2:00pm",
-          "dateString": "2018-08-02T14:00:00+00:00"
+          "date": "Sunday 31 Jul 2:00pm",
+          "dateString": "2018-07-31T14:00:00+00:00"
         }
       ]
     }
