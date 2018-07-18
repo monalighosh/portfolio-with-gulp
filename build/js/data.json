@@ -8,7 +8,7 @@
       "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
       "performances": [
         {
-          "date": "Friday 27 Jul 8:00pm",
+          "date": "Friday 7 Jul 8:00pm",
           "dateString": "2018-07-27T20:00:00+00:00"
         },
         {
