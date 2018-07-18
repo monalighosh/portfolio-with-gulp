@@ -5,20 +5,82 @@
       "species": "Cat",
       "favFoods": ["wet food", "dry food", "<strong>any</strong> food"],
       "birthYear": 2016,
-      "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "performances": [
+        {
+          "date": "Friday 27 Jul 8:00pm",
+          "dateString": "2018-07-27T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 29 Jul 2:00pm",
+          "dateString": "2018-07-29T14:00:00+00:00"
+        },
+        {
+          "date": "Friday 30 Jul 8:00pm",
+          "dateString": "2018-07-30T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 31 Jul 2:00pm",
+          "dateString": "2018-07-31T14:00:00+00:00"
+        }
+      ]
     },
     {
       "name": "Barksalot",
       "species": "Dog",
       "birthYear": 2008,
-      "photo": "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+      "photo": "https://learnwebcode.github.io/json-example/images/dog-1.jpg",
+      "performances": [
+        {
+          "date": "Friday 27 Jul 8:00pm",
+          "dateString": "2018-07-27T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 29 Jul 2:00pm",
+          "dateString": "2018-07-29T14:00:00+00:00"
+        },
+        {
+          "date": "Friday 30 Jul 8:00pm",
+          "dateString": "2018-07-30T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 31 Jul 2:00pm",
+          "dateString": "2018-07-31T14:00:00+00:00"
+        },
+        {
+          "date": "Sunday 2 August 2:00pm",
+          "dateString": "2018-08-02T14:00:00+00:00"
+        }
+      ]
     },
     {
       "name": "Meowsalot",
       "species": "Cat",
       "favFoods": ["tuna", "catnip", "celery"],
       "birthYear": 2012,
-      "photo": "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+      "photo": "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+      "performances": [
+        {
+          "date": "Friday 27 Jul 8:00pm",
+          "dateString": "2018-07-27T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 29 Jul 2:00pm",
+          "dateString": "2018-07-29T14:00:00+00:00"
+        },
+        {
+          "date": "Friday 30 Jul 8:00pm",
+          "dateString": "2018-07-30T20:00:00+00:00"
+        },
+        {
+          "date": "Sunday 31 Jul 2:00pm",
+          "dateString": "2018-07-31T14:00:00+00:00"
+        },
+        {
+          "date": "Sunday 2 August 2:00pm",
+          "dateString": "2018-08-02T14:00:00+00:00"
+        }
+      ]
     }
   ]
 }
